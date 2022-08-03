@@ -42,3 +42,23 @@ Measure range up to 0.5bar would measure column height up to approximately 5m.
 - Temperature sensor resolution: 9 to 12 adjustable resolution
 - Temperature range: -55 ~ +125 °
 
+### Wemos LOLIN32-Lite
+ESP32 Development board, 4MB flash
+
+### Other consumbles
+- Dupont lines
+- 3 pin XLR connectors (male + female)
+- 3 pin screw terminal blocks
+- PCB circuit board
+- Plastic enclosure
+- Multi colour wires
+
+## Water capacity calculation
+
+Pressure calculation: `0.5-4.5V -> 0.0-0.5bar = (V - 0.5) * 0.125`
+Column height (of water): `N/m2 / (1000 * 9.81)`
+`1 bar = 100000 N/m2`
+
+Formula: `(V - 0.5) * 0.125 * 100000 / (1000 * 9.81) = (V - 0.5) * 1.2742`
+
+Formula needs to be multiplied by the tank dimensions (tank area) to get water volume.
