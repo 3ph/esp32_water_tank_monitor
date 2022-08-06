@@ -68,7 +68,7 @@ Flow sensor pulse rate is 60 pulses per litre.
 Total consumption filter: `0.0167 (1/60 pulses per litre)`.
 
 ## Schema
-![Schema](img/schema.jpg)
+<img src="img/schema.jpg" width="600">
 
 **WP** - water pressure sensor
 **WF** - water flow sensor
