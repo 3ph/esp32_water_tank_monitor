@@ -66,3 +66,11 @@ Formula needs to be multiplied by the tank dimensions (tank area) to get water v
 Flow sensor pulse rate is 60 pulses per litre.
 
 Total consumption filter: `0.0167 (1/60 pulses per litre)`.
+
+## Schema
+![Schema](img/schema.jpg)
+
+**WP** - water pressure sensor
+**WF** - water flow sensor
+**WT** - water temperature sensor
+**ES** - enviromental sensor
