@@ -54,7 +54,6 @@ ESP32 Development board, 4MB flash
 - Multi colour wires
 
 ## Water capacity calculation
-
 Pressure calculation: `0.5-4.5V -> 0.0-0.5bar = (V - 0.5) * 0.125`
 Column height (of water): `N/m2 / (1000 * 9.81)`
 `1 bar = 100000 N/m2`
@@ -62,3 +61,8 @@ Column height (of water): `N/m2 / (1000 * 9.81)`
 Formula: `(V - 0.5) * 0.125 * 100000 / (1000 * 9.81) = (V - 0.5) * 1.2742`
 
 Formula needs to be multiplied by the tank dimensions (tank area) to get water volume.
+
+## Water flow calculation
+Flow sensor pulse rate is 60 pulses per litre.
+
+Total consumption filter: `0.0167 (1/60 pulses per litre)`.
